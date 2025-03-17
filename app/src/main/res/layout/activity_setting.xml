@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDF7F6"
+    tools:context=".setting">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#AD9980"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/arrow_back"
+            android:id="@+id/arrow_back"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Setting"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <!-- ScrollView for Setting Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- App Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Our Age Calculator App"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to [Age Calculator], your go-to app for calculating age accurately and effortlessly. Our app helps you determine your age in years, months, weeks, days, hours, minutes, and seconds from your birth date to the current date. Additionally, it provides your zodiac sign based on your birth date."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="16dp"
+                android:justificationMode="inter_word" />
+
+            <!-- Features Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Key Features:"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Accurate Age Calculation: Calculate your age in years, months, weeks, days, hours, minutes, and seconds.\n2. Zodiac Sign: Discover your zodiac sign based on your birth date.\n3. User-Friendly Interface: Simple and intuitive design for easy navigation.\n4. Privacy-Focused: No personal data is collected or shared."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="16dp"
+                android:justificationMode="inter_word" />
+
+            <!-- Settings Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Settings:"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Theme: Choose between light and dark themes for a personalized experience.\n2. Notifications: Enable or disable reminders for special occasions.\n3. Language: Select your preferred language for the app interface.\n4. Data Usage: Control how the app uses your data for calculations."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="16dp"
+                android:justificationMode="inter_word" />
+
+            <!-- Contact Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Us:"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you have any questions or feedback, feel free to reach out to us at support@agecalculator.com. We value your input and are always here to help!"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="16dp"
+                android:justificationMode="inter_word" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/bottom_nav"
+        app:menu="@menu/bottom_nav"
+        android:paddingTop="17dp"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        />
+
+</LinearLayout>

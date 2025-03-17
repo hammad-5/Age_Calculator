@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">	#0000FF</color>
+    <color name="active_color">#00FF00</color> <!-- Green -->
+    <color name="inactive_color">#808080</color>
+    <color name="selected_gray">#502E2E2E</color>
+    <color name="gray">#808080</color>
+    <color name="GREEN">#008000</color>
+    <color name="your_custom_color">#EAF8F0</color>
+    <color name="Colony_bllue">#5b6c9a</color>
+    <color name="Rikan_Brown">#524934</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="Grullo">#AD9980</color>
+    <color name="UCLA_Blue">#5B6C9A</color>
+
+</resources>

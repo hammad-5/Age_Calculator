@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        android:fontFamily="sans-serif-medium"
+        />
+    <item
+        android:id="@+id/about_ic"
+        android:title="Famous Birthday"
+        android:icon="@drawable/information"
+        android:fontFamily="sans-serif-medium"
+        />
+    <item
+        android:id="@+id/privacy"
+        android:title="Privacy Policy"
+        android:icon="@drawable/privacy_policy"
+        android:fontFamily="sans-serif-medium"
+        />
+    <item
+        android:id="@+id/setting_ic"
+        android:title="Setting"
+        android:icon="@drawable/setting"
+        android:fontFamily="sans-serif-medium"
+      />
+
+</menu>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:orientation="vertical"
+        android:background="@drawable/design"
+        android:backgroundTint="#EEEEF1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/textYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="YEARS"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="MONTHS"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textdays"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="DAYS"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            >
+
+            <TextView
+                android:id="@+id/cyear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="35"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cmonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cdays"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-5dp"
+        android:backgroundTint="#EEEEF1"
+        android:background="@drawable/udesign"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/txtyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Years"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:id="@+id/txtmonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Month"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/txtweek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Weeks"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/txtdays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Days"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/txthours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Hours"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/txtmonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Minutes"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/txtsecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Seconds"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="3dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:background="#60669E"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/cryear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:id="@+id/crmonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/crweek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/crdays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/crhours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/crminutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/crseconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

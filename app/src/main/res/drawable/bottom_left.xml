@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="#864ce4"/> <!-- Background color -->
+    <stroke android:width="2dp" android:color="#864ce4"/> <!-- Outline color -->
+
+    <!-- Curve only at Bottom Left -->
+    <corners
+        android:bottomRightRadius="30dp"
+  />
+
+    <!-- Adjust size to look like an extended part -->
+    <size android:width="40dp" android:height="100dp"/>
+</shape>

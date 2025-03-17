@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="100dp"
+    android:viewportWidth="200"
+    android:viewportHeight="100">
+
+    <!-- Upward Curved Shape -->
+    <path
+        android:fillColor="#B6ACA3"
+        android:pathData="M0,100 L200,100 L200,40 Q100,-40 0,40 Z" />
+</vector>

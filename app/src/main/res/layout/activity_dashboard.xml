@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF7F6"
+    tools:context=".dashboard">
+
+    <!-- Main Content Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="#AD9980"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Age Calculator"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/vertical_menu"
+                android:backgroundTint="#fff"
+                android:contentDescription="Menu Icon" />
+        </LinearLayout>
+
+        <!-- Scrollable Main Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Date Inputs -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#B6ACA3"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/mediumitalic"
+                        android:text="Birth Date"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/birthDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/design"
+                        android:backgroundTint="#fff"
+                        android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+                        android:hint="DD - MM - YYYY"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/mediumitalic"
+                        android:text="Current Date"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/currentdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/design"
+                        android:backgroundTint="#fff"
+                        android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+                        android:hint="DD - MM - YYYY"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray" />
+
+                    <Button
+                        android:id="@+id/btn"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:textColor="@color/white"
+                        android:text="Calculate Your Age"
+                        android:textStyle="bold"
+                        android:background="@drawable/btn_design"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_design"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/design"
+                    android:backgroundTint="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp">
+                    <!-- Age Display Section -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+                        android:textSize="30dp"
+                        android:textColor="#2B4B65"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/mediumitalic"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:id="@+id/textYear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="YEARS"
+                            android:textColor="#C7C7C7"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/textMonth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="MONTHS"
+                            android:textColor="#C7C7C7"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/textdays"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="DAYS"
+                            android:textColor="#C7C7C7"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="20dp">
+                        <TextView
+                            android:id="@+id/cyear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/cmonth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/cdays"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Total Time Section -->
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="-7dp"
+                    android:backgroundTint="#fff"
+                    android:background="@drawable/udesign">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txtyear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Years"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="20dp"
+                            android:layout_marginTop="15dp" />
+                        <TextView
+                            android:id="@+id/txtmonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Month"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="20dp" />
+                        <TextView
+                            android:id="@+id/txtweek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Weeks"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="20dp" />
+                        <TextView
+                            android:id="@+id/txtdays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Days"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:paddingLeft="20dp" />
+                        <TextView
+                            android:id="@+id/txthours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Hours"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="20dp" />
+                        <TextView
+                            android:id="@+id/textminute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Minutes"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="20dp" />
+                        <TextView
+                            android:id="@+id/txtsecond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Seconds"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="20dp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#60669E"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/cryear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:paddingLeft="20dp"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:id="@+id/crmonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="20dp" />
+                        <TextView
+                            android:id="@+id/crweek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:paddingLeft="20dp" />
+                        <TextView
+                            android:id="@+id/crdays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:paddingLeft="20dp" />
+                        <TextView
+                            android:id="@+id/crhours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:paddingLeft="20dp" />
+                        <TextView
+                            android:id="@+id/crminutes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:id="@+id/crseconds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:paddingLeft="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Zodiac Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/design"
+                    android:backgroundTint="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zodiac Sign"
+                        android:fontFamily="@font/mediumitalic"
+                        android:textSize="30dp"
+                        android:textColor="#2B4B65"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="WESTERN"
+                            android:textColor="#C7C7C7"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="MONTHS"
+                            android:textColor="#C7C7C7"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="CHINESE"
+                            android:textColor="#C7C7C7"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="20dp">
+                        <TextView
+                            android:id="@+id/zsign"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#111111"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/zmonth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#111111"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/zchinese"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#111111"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+       <com.google.android.material.bottomnavigation.BottomNavigationView
+          android:id="@+id/bottom_navigation"
+           android:layout_width="match_parent"
+           android:layout_height="75dp"
+           android:background="@drawable/bottom_nav"
+           app:menu="@menu/bottom_nav"
+           android:paddingTop="17dp"
+           app:itemIconSize="24dp"
+           app:labelVisibilityMode="labeled"
+           app:itemIconTint="@color/white"
+           app:itemTextColor="@color/white"
+           android:backgroundTint="#ffff"
+           />
+
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navig_bar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:menu="@menu/nav"
+        app:itemIconPadding="20dp"
+        android:background="#1a1a1a"
+        app:itemTextColor="@color/white"
+        android:layout_gravity="end" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
