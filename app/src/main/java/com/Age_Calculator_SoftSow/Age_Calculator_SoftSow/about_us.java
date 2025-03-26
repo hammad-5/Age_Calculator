@@ -1,4 +1,4 @@
-package com.Age_Calculator.Age_Calculator;
+package com.Age_Calculator_SoftSow.Age_Calculator_SoftSow;
 
 import static android.content.ContentValues.TAG;
 
@@ -11,6 +11,7 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.Toast;
 import android.content.Intent;
 import androidx.annotation.NonNull;
@@ -18,8 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.Age_Calculator.R;
-import com.example.hijrimonth_find.R;
+import com.Age_Calculator_SoftSow.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -41,6 +41,9 @@ public class about_us extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
+
+        ScrollView scrollView = findViewById(R.id.scrollView);
+        scrollView.post(() -> scrollView.smoothScrollTo(0, 0));
 
         // Show splash overlay when activity launches.
         showSplash();
@@ -104,7 +107,9 @@ public class about_us extends AppCompatActivity {
                 Log.e(TAG, "Database error: " + error.getMessage());
                 Toast.makeText(about_us.this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
             }
+
         });
+
     }
 
     private boolean handleBottomNavigation(@NonNull MenuItem item) {

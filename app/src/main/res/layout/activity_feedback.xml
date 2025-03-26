@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#EDF7F6"
-    tools:context=".Feedback">
+    tools:context=".Age_Calculator_SoftSow.Feedback">
 
     <!-- Top Bar -->
     <LinearLayout
@@ -39,15 +39,20 @@
 
     <!-- ScrollView for Feedback Content -->
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="16dp">
+        android:overScrollMode="never"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="20dp"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <!-- App Description -->
             <TextView
@@ -55,9 +60,11 @@
                 android:layout_height="wrap_content"
                 android:text="About Our Age Calculator App"
                 android:textSize="18sp"
-                android:textColor="#000000"
+                android:textColor="#2B4B65"
                 android:textStyle="bold"
-                android:paddingBottom="8dp" />
+                android:paddingBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -67,7 +74,9 @@
                 android:textColor="#000000"
                 android:lineSpacingExtra="4dp"
                 android:paddingBottom="16dp"
-                android:justificationMode="inter_word" />
+                android:justificationMode="inter_word"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
 
             <!-- Feedback Form -->
             <TextView
@@ -75,9 +84,11 @@
                 android:layout_height="wrap_content"
                 android:text="We Value Your Feedback!"
                 android:textSize="18sp"
-                android:textColor="#000000"
+                android:textColor="#2B4B65"
                 android:textStyle="bold"
-                android:paddingBottom="8dp" />
+                android:paddingBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -87,31 +98,9 @@
                 android:textColor="#000000"
                 android:lineSpacingExtra="4dp"
                 android:paddingBottom="16dp"
-                android:justificationMode="inter_word" />
-
-            <!-- Rating Section -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rate Our App:"
-                android:textSize="16sp"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                android:paddingBottom="8dp" />
-
-            <RatingBar
-                android:id="@+id/ratingBar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:numStars="5"
-                android:stepSize="1"
-                android:rating="3"
-                android:paddingBottom="16dp"
-                android:progressTint="#FFD700"
-                android:progressBackgroundTint="#BDBDBD"
-                android:secondaryProgressTint="#FFD700"
-                />
-
+                android:justificationMode="inter_word"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
 
             <!-- Feedback Comments -->
             <TextView
@@ -119,9 +108,11 @@
                 android:layout_height="wrap_content"
                 android:text="Your Comments:"
                 android:textSize="16sp"
-                android:textColor="#000000"
+                android:textColor="#2B4B65"
                 android:textStyle="bold"
-                android:paddingBottom="8dp" />
+                android:paddingBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
 
             <EditText
                 android:id="@+id/feedbackComments"
@@ -132,7 +123,9 @@
                 android:textColor="@color/black"
                 android:padding="8dp"
                 android:background="@drawable/edittext_background"
-                android:gravity="top" />
+                android:gravity="top"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
 
             <!-- Submit Button -->
             <Button
@@ -144,7 +137,10 @@
                 android:textColor="@color/white"
                 android:backgroundTint="#AD9980"
                 android:layout_marginTop="16dp"
-                android:padding="12dp" />
+                android:padding="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
         </LinearLayout>
     </ScrollView>
 

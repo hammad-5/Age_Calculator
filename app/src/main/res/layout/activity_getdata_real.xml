@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#EDF7F6"
-    tools:context=".getdata_real">
+    tools:context=".Age_Calculator_SoftSow.getdata_real">
 
     <!-- Top Bar -->
     <LinearLayout
@@ -43,10 +43,14 @@
 
     <!-- ScrollView for Content -->
     <ScrollView
+        android:id="@+id/scrollVie"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="16dp">
+        android:overScrollMode="never"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="20dp"
+        android:scrollbars="none">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/get_realRecycler"

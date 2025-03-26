@@ -1,4 +1,4 @@
-package com.Age_Calculator.Age_Calculator;
+package com.Age_Calculator_SoftSow.Age_Calculator_SoftSow;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -9,10 +9,12 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
+import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.Age_Calculator.R;
-import com.example.hijrimonth_find.R;
+import com.Age_Calculator_SoftSow.R;
+import com.Age_Calculator_SoftSow.translate;
 
 public class MainActivity extends AppCompatActivity {
     private TextView ageTextView;
@@ -68,5 +70,17 @@ public class MainActivity extends AppCompatActivity {
         colorAnim.setRepeatCount(ObjectAnimator.INFINITE);
         colorAnim.start();
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.translate) {
+            Intent intent = new Intent(this, translate.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
 
 }

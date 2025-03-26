@@ -1,4 +1,4 @@
-package com.Age_Calculator.Age_Calculator;
+package com.Age_Calculator_SoftSow.Age_Calculator_SoftSow;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,12 +13,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.Age_Calculator.R;
-import com.example.hijrimonth_find.R;
+import com.Age_Calculator_SoftSow.R;
+import com.Age_Calculator_SoftSow.translate;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -29,7 +30,7 @@ public class dashboard extends AppCompatActivity {
     EditText birthdat, currentdat;
     TextView cyear, cmonth, cdays;
     TextView cryea, crmont, crwee, crday, crhour, crminute, crsecon;
-    Button calculateButton;
+    Button calculateButton,clearButton;
     Calendar birthCalendar, currentCalendar;
     TextView zsign, zmonth, zchinese;
 
@@ -59,6 +60,7 @@ public class dashboard extends AppCompatActivity {
         crminute = findViewById(R.id.crminutes);
         crsecon = findViewById(R.id.crseconds);
         calculateButton = findViewById(R.id.btn);
+        clearButton = findViewById(R.id.btn_clear);
 
         zsign = findViewById(R.id.zsign);
         zmonth = findViewById(R.id.zmonth);
@@ -67,10 +69,10 @@ public class dashboard extends AppCompatActivity {
         drawerLayout =findViewById(R.id.drawer_layout);
         navigationview=findViewById(R.id.navig_bar);
 
+        ScrollView scrollView = findViewById(R.id.scrollView);
+        scrollView.post(() -> scrollView.smoothScrollTo(0, 0));
+
         menuIco=findViewById(R.id.menuIcon);
-
-
-
         // Menu icon click to open drawer
         menuIco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,10 +91,15 @@ public class dashboard extends AppCompatActivity {
                     finish(); // Optional: finish current activity
                     drawerLayout.closeDrawers(); // Close drawer after selection
                     return true;
+                } else if (item.getItemId()== R.id.translate) {
+                    Intent intent = new Intent(dashboard.this, translate.class);
+                    startActivity(intent);
+                    finish();
                 }
-                return false;
+                return true;
             }
         });
+
         // Bottom Navigation Setup
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(this::handleBottomNavigation);
@@ -137,6 +144,8 @@ public class dashboard extends AppCompatActivity {
                 calculateAge(birthYear, birthMonth, birthDay);
             }
         });
+
+        clearButton.setOnClickListener(v -> clearAllFields());
 
         // **Detect Right-side Icon Click on EditTexts**
         birthdat.setOnTouchListener((v, event) -> {
@@ -228,10 +237,9 @@ public class dashboard extends AppCompatActivity {
         long totalHours = totalMinutes / 60;
         long totalDays = totalHours / 24;
         long totalWeeks = totalDays / 7;
-
-        int years = today.get(Calendar.YEAR) - birthYear;
-        int months = today.get(Calendar.MONTH) - birthMonth;
-        int days = today.get(Calendar.DAY_OF_MONTH) - birthDay;
+        int years = today.get(Calendar.YEAR) - birthDate.get(Calendar.YEAR);
+        int months = today.get(Calendar.MONTH) - birthDate.get(Calendar.MONTH);
+        int days = today.get(Calendar.DAY_OF_MONTH) - birthDate.get(Calendar.DAY_OF_MONTH);
         if (days < 0) {
             months--;
             days += 30;
@@ -243,8 +251,8 @@ public class dashboard extends AppCompatActivity {
         int totalMonths = (years * 12) + months;
 
         cyear.setText(String.valueOf(years));
-        cmonth.setText(String.valueOf(months));
-        cdays.setText(String.valueOf(days));
+        cmonth.setText(String.valueOf(totalMonths));
+        cdays.setText(String.valueOf(totalDays));
 
         cryea.setText(String.valueOf(years));
         crmont.setText(String.valueOf(totalMonths));
@@ -304,6 +312,32 @@ public class dashboard extends AppCompatActivity {
 
         return "Unknown";
     }
+    private void clearAllFields() {
+        // Reset only the date inputs
+        birthdat.setText("");
+//        currentdat.setText("");
+
+        cyear.setText("0");
+        cmonth.setText("0");
+        cdays.setText("0");
+        // Reset dynamic result fields (calculated ones)
+        cryea.setText("0");
+        crmont.setText("0");
+        crwee.setText("0");
+        crday.setText("0");
+        crhour.setText("0");
+        crminute.setText("0");
+        crsecon.setText("0");
+
+        // Reset zodiac and month names
+        zsign.setText("0");
+        zmonth.setText("0");
+        zchinese.setText("0");
+
+        // Keep the default values in the layout (35, 1, 5) untouched
+    }
+
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();

@@ -15,5 +15,6 @@
     <color name="purple_500">#9C27B0</color>
     <color name="Grullo">#AD9980</color>
     <color name="UCLA_Blue">#5B6C9A</color>
-
+    <color name="card_background">#FFFFFF</color>
+    <color name="background_main">#EAF8F0</color>
 </resources>

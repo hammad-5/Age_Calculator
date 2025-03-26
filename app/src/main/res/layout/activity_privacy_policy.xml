@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#EDF7F6"
-    tools:context=".privacy_policy">
+    tools:context=".Age_Calculator_SoftSow.privacy_policy">
 
     <!-- Top Bar -->
     <LinearLayout
@@ -38,19 +38,26 @@
     </LinearLayout>
 
 
-    <!-- ScrollView for Privacy Policy Text -->
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="16dp">
+        android:overScrollMode="never"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="20dp"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
 
-            <!-- Merged Privacy Policy Text -->
+            <!-- Privacy Policy Section -->
             <TextView
                 android:id="@+id/privacyPolicyText"
                 android:layout_width="match_parent"
@@ -62,14 +69,34 @@
                 android:paddingBottom="16dp"
                 android:justificationMode="inter_word" />
 
-            <!-- App Functionality Description -->
+            <!-- Data Security -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Security:"
+                android:textSize="18sp"
+                android:textColor="#2B4B65"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your data never leaves your device. We don't require internet permissions and there are no hidden data collection processes. All date information you input is immediately discarded after calculations."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="16dp"
+                android:justificationMode="inter_word" />
+
+            <!-- App Functionality -->
             <TextView
                 android:id="@+id/functionalityHeading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="App Functionality:"
                 android:textSize="18sp"
-                android:textColor="#000000"
+                android:textColor="#2B4B65"
                 android:textStyle="bold"
                 android:paddingBottom="8dp" />
 
@@ -77,21 +104,21 @@
                 android:id="@+id/functionalityText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Calculate your age in years, months, weeks, days, hours, minutes, and seconds from your birth date to the current date. Determine your zodiac sign based on your birth date. This app provides accurate and instant results for all your age-related queries."
+                android:text="Calculate your age in years, months, weeks, days, hours, minutes, and seconds from your birth date to the current date. Determine your zodiac sign based on your birth date using standard astrological calculations. All results are generated in real-time and never stored."
                 android:textSize="16sp"
                 android:textColor="#000000"
                 android:lineSpacingExtra="4dp"
                 android:paddingBottom="16dp"
                 android:justificationMode="inter_word" />
 
-            <!-- Zodiac Sign Section -->
+            <!-- Zodiac Sign Details -->
             <TextView
                 android:id="@+id/zodiacHeading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Zodiac Sign:"
+                android:text="Zodiac Calculation:"
                 android:textSize="18sp"
-                android:textColor="#000000"
+                android:textColor="#2B4B65"
                 android:textStyle="bold"
                 android:paddingBottom="8dp" />
 
@@ -99,64 +126,55 @@
                 android:id="@+id/zodiacText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Your zodiac sign is determined based on your birth date. For example, if your birth date is December 30, your zodiac sign is Capricorn. The app uses astrological calculations to provide accurate zodiac signs for all users."
+                android:text="Zodiac signs are determined using tropical astrology dates:\n\n• Aries: March 21 - April 19\n• Taurus: April 20 - May 20\n• Gemini: May 21 - June 20\n• Cancer: June 21 - July 22\n• Leo: July 23 - August 22\n• Virgo: August 23 - September 22\n• Libra: September 23 - October 22\n• Scorpio: October 23 - November 21\n• Sagittarius: November 22 - December 21\n• Capricorn: December 22 - January 19\n• Aquarius: January 20 - February 18\n• Pisces: February 19 - March 20"
                 android:textSize="16sp"
                 android:textColor="#000000"
                 android:lineSpacingExtra="4dp"
                 android:paddingBottom="16dp"
                 android:justificationMode="inter_word" />
 
-            <!-- Radio Buttons for Acknowledgment -->
-            <RadioGroup
-                android:id="@+id/radioGroup"
+            <!-- Age Calculation Details -->
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="16dp">
+                android:text="Calculation Method:"
+                android:textSize="18sp"
+                android:textColor="#2B4B65"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
 
-                <RadioButton
-                    android:id="@+id/radioAgree"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I agree to the Privacy Policy"
-                    android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:padding="8dp"
-                    android:buttonTint="@color/black" /> <!-- Change radio button color to black -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age calculations consider:\n• Gregorian calendar dates\n• Leap years\n• Month length variations\n• Time zones based on device settings\n• Daylight saving time adjustments\nAll results are approximate and based on 24-hour days."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="16dp"
+                android:justificationMode="inter_word" />
 
-                <RadioButton
-                    android:id="@+id/radioDisagree"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I do not agree to the Privacy Policy"
-                    android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:padding="8dp"
-                    android:buttonTint="@color/black" /> <!-- Change radio button color to black -->
+            <!-- Limitations -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Important Notes:"
+                android:textSize="18sp"
+                android:textColor="#2B4B65"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
 
-                <RadioButton
-                    android:id="@+id/radioUnderstandFunctionality"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I understand the app's functionality"
-                    android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:padding="8dp"
-                    android:buttonTint="@color/black" /> <!-- Change radio button color to black -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• For entertainment purposes only\n• Not medical/legal advice\n• Zodiac interpretations may vary\n• Calendar conversions may have historical inaccuracies\n• Does not account for relativistic effects"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="16dp"
+                android:justificationMode="inter_word" />
 
-                <RadioButton
-                    android:id="@+id/radioUnderstandZodiac"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I understand how my zodiac sign is determined"
-                    android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:padding="8dp"
-                    android:buttonTint="@color/black" /> <!-- Change radio button color to black -->
-            </RadioGroup>
         </LinearLayout>
     </ScrollView>
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"

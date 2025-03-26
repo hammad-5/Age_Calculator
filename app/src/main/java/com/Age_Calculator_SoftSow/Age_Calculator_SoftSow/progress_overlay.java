@@ -1,10 +1,10 @@
-package com.Age_Calculator.Age_Calculator;
+package com.Age_Calculator_SoftSow.Age_Calculator_SoftSow;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.Age_Calculator.R;
+import com.Age_Calculator_SoftSow.R;
 
 public class progress_overlay extends AppCompatActivity {
 

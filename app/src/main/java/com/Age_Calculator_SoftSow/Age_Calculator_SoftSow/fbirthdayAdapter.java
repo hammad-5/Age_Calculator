@@ -1,4 +1,4 @@
-package com.Age_Calculator.Age_Calculator;
+package com.Age_Calculator_SoftSow.Age_Calculator_SoftSow;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.Age_Calculator_SoftSow.R;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.squareup.picasso.Picasso;
 
@@ -77,4 +78,5 @@ public class fbirthdayAdapter extends RecyclerView.Adapter<fbirthdayAdapter.View
             progressBar = itemView.findViewById(R.id.progressBar);
         }
     }
+
 }

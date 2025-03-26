@@ -1,42 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Age_Calculator_SoftSow">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+
+            <data android:scheme="mailto" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/age"
         android:label="Age Calculate"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hijrimonth_find"
         tools:targetApi="31">
         <activity
-            android:name=".progress_overlay"
+            android:name=".translate"
             android:exported="false" />
         <activity
-            android:name=".getdata_real"
+            android:name=".Age_Calculator_SoftSow.progress_overlay"
             android:exported="false" />
         <activity
-            android:name=".Feedback"
+            android:name=".Age_Calculator_SoftSow.getdata_real"
             android:exported="false" />
         <activity
-            android:name=".setting"
+            android:name=".Age_Calculator_SoftSow.Feedback"
             android:exported="false" />
         <activity
-            android:name=".privacy_policy"
+            android:name=".Age_Calculator_SoftSow.setting"
             android:exported="false" />
         <activity
-            android:name=".about_us"
+            android:name=".Age_Calculator_SoftSow.privacy_policy"
             android:exported="false" />
         <activity
-            android:name=".dashboard"
+            android:name=".Age_Calculator_SoftSow.about_us"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Age_Calculator_SoftSow.dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Age_Calculator_SoftSow.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

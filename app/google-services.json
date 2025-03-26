@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "103008124466",
-    "project_id": "age-calculate-c24ed",
-    "storage_bucket": "age-calculate-c24ed.firebasestorage.app"
+    "project_number": "658202584041",
+    "project_id": "age-calculator-697fc",
+    "storage_bucket": "age-calculator-697fc.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:103008124466:android:17b51afde05541d845862b",
+        "mobilesdk_app_id": "1:658202584041:android:94f270bc2319c18130e178",
         "android_client_info": {
-          "package_name": "com.example.hijrimonth_find"
+          "package_name": "com.Age_Calculator_SoftSow"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB8_vlqA_wV1Nz4m8KNMhbIhofXRCv9Rmc"
+          "current_key": "AIzaSyDnvB8HzSjDBICCrBbSQRF-VeMCNlkf7m8"
         }
       ],
       "services": {

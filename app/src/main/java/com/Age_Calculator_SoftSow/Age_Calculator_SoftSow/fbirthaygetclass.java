@@ -1,4 +1,4 @@
-package com.Age_Calculator.Age_Calculator;
+package com.Age_Calculator_SoftSow.Age_Calculator_SoftSow;
 
 public class fbirthaygetclass {
     private String name, birthday, next_birthday, imageUrl, age_txt, key, c_id;

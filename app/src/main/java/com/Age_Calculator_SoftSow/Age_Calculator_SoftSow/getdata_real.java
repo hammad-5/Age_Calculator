@@ -1,4 +1,4 @@
-package com.Age_Calculator.Age_Calculator;
+package com.Age_Calculator_SoftSow.Age_Calculator_SoftSow;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,8 +9,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 
-import com.Age_Calculator.R;
+import com.Age_Calculator_SoftSow.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -29,6 +30,9 @@ public class getdata_real extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_getdata_real);
+
+        ScrollView scrollView = findViewById(R.id.scrollVie);
+        scrollView.post(() -> scrollView.smoothScrollTo(0, 0));
 
         arrow_back = findViewById(R.id.arrow_back);
         get_realRecycle = findViewById(R.id.get_realRecycler);

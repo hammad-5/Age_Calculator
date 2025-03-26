@@ -1,4 +1,4 @@
-package com.Age_Calculator.Age_Calculator;
+package com.Age_Calculator_SoftSow.Age_Calculator_SoftSow;
 
 public class get_realClass {
     private String name, age, birthday, zodiac_trait, chinese_trait, next_birt,Wzodiac_sig,Czodiac_sig,img,img2,c_id;
