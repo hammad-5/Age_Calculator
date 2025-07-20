@@ -21,10 +21,11 @@
         android:label="Age Calculate"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hijrimonth_find"
-        tools:targetApi="31">
-        <activity
-            android:name=".translate"
-            android:exported="false" />
+        android:configChanges="locale|layoutDirection"
+        tools:targetApi="31"
+        >
+
+
         <activity
             android:name=".Age_Calculator_SoftSow.progress_overlay"
             android:exported="false" />

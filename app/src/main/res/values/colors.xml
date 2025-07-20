@@ -17,4 +17,6 @@
     <color name="UCLA_Blue">#5B6C9A</color>
     <color name="card_background">#FFFFFF</color>
     <color name="background_main">#EAF8F0</color>
+    <color name="LIGHT_GOLDEN">#AD9980</color>
+    <color name="colorBackground"></color>
 </resources>

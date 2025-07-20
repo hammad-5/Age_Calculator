@@ -24,7 +24,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 public class Feedback extends AppCompatActivity {
-    NavigationView bottomNavigationView;
+    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,29 +38,34 @@ public class Feedback extends AppCompatActivity {
 // Inside your Activity's onCreate method
         Button submitButton = findViewById(R.id.submitButton);
         EditText feedbackComments = findViewById(R.id.feedbackComments);
+        // 3. Find it and attach the listener
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnItemSelectedListener(this::handleBottomNavigation);
 
         submitButton.setOnClickListener(v -> {
             String feedback = feedbackComments.getText().toString().trim();
 
             // Enhanced validation
             if (feedback.isEmpty()) {
-                feedbackComments.setError("This field cannot be empty");
+                feedbackComments.setError(getString(R.string.error_empty_feedback));
                 feedbackComments.requestFocus();
                 return;
             }
 
+
             if (feedback.length() < 10) {
-                feedbackComments.setError("Please provide more detailed feedback");
+                feedbackComments.setError(getString(R.string.error_short_feedback));
                 feedbackComments.requestFocus();
                 return;
             }
+
 
             // Sanitize input
             String sanitizedFeedback = feedback.replaceAll("[<>]", "");
 
             try {
                 String emailAddress = "hammadirshad38@gmail.com";
-                String subject = "App Feedback Submission";
+                String subject = getString(R.string.subject_feedback);
 
                 // Secure intent creation
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
@@ -73,7 +78,7 @@ public class Feedback extends AppCompatActivity {
                 if (getPackageManager().resolveActivity(emailIntent, PackageManager.MATCH_DEFAULT_ONLY) != null) {
                     startActivity(Intent.createChooser(emailIntent, "Send feedback using..."));
                     feedbackComments.setText(""); // Clear input after submission
-                    Toast.makeText(this, "Feedback ready to send!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.feedback_ready), Toast.LENGTH_SHORT).show();
                 } else {
                     showNoEmailClientError();
                 }

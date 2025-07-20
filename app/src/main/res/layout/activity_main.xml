@@ -24,7 +24,7 @@
           android:id="@+id/age_calculate"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text=""
+          android:text="@string/age_calculator_title"
           android:textSize="35dp"
           android:fontFamily="@font/mediumitalic"
           android:textColor="#1a1a1a"/>

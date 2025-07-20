@@ -6,7 +6,7 @@
         android:id="@+id/group1">
         <item
             android:id="@+id/feed"
-            android:title="Feedback"
+            android:title="@string/Feedback_snav"
             android:icon="@drawable/baseline_feedback_24"
             android:iconTint="@color/white" />
 
@@ -16,8 +16,15 @@
         >
         <item
             android:id="@+id/translate"
-            android:title="Translate"
+            android:title="@string/Translate_snav"
             android:icon="@drawable/translate"
+            android:iconTint="@color/white" />
+    </group>
+    <group android:id="@+id/group3">
+        <item
+            android:id="@+id/darkMood"
+            android:title="@string/DarkMood"
+            android:icon="@drawable/dark_mood"
             android:iconTint="@color/white" />
     </group>
 </menu>

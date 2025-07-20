@@ -4,24 +4,24 @@
     <item
         android:id="@+id/home"
         android:icon="@drawable/home"
-        android:title="Home"
+        android:title="@string/Home_nav"
         android:fontFamily="sans-serif-medium"
         />
     <item
         android:id="@+id/about_ic"
-        android:title="Famous Birthday"
+        android:title="@string/Famous_Birthday_about"
         android:icon="@drawable/information"
         android:fontFamily="sans-serif-medium"
         />
     <item
         android:id="@+id/privacy"
-        android:title="Privacy Policy"
+        android:title="@string/PrivacyPolicy_nav"
         android:icon="@drawable/privacy_policy"
         android:fontFamily="sans-serif-medium"
         />
     <item
         android:id="@+id/setting_ic"
-        android:title="About"
+        android:title="@string/About_nav"
         android:icon="@drawable/about"
         android:fontFamily="sans-serif-medium"
       />

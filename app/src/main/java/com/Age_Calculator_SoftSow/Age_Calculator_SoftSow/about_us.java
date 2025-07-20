@@ -3,6 +3,9 @@ package com.Age_Calculator_SoftSow.Age_Calculator_SoftSow;
 import static android.content.ContentValues.TAG;
 
 import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,7 +16,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.Toast;
-import android.content.Intent;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -45,8 +48,7 @@ public class about_us extends AppCompatActivity {
         ScrollView scrollView = findViewById(R.id.scrollView);
         scrollView.post(() -> scrollView.smoothScrollTo(0, 0));
 
-        // Show splash overlay when activity launches.
-        showSplash();
+        showSplash(); // Splash overlay
 
         recyclerViesl = findViewById(R.id.recbirthget);
         databaseReferencebirth = FirebaseDatabase.getInstance().getReference("famousbirthday");
@@ -58,6 +60,14 @@ public class about_us extends AppCompatActivity {
         fbirthdayAdapte = new fbirthdayAdapter(this, list);
         recyclerViesl.setAdapter(fbirthdayAdapte);
 
+        // Call Firebase Database
+        String lang = getSharedPreferences("SettingsPrefs", MODE_PRIVATE).getString("My_Lang", "en");
+
+
+        SharedPreferences sharedPreferenc = getSharedPreferences("Card", Context.MODE_PRIVATE);
+        String sharedString = sharedPreferenc.getString("sharedStringId", "");
+        Log.d("ID", sharedString);
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(this::handleBottomNavigation);
 
@@ -68,48 +78,45 @@ public class about_us extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 list.clear();
-                Log.d("AboutUs", "Total children: " + snapshot.getChildrenCount());
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                    fbirthaygetclass productone = new fbirthaygetclass();
-                    String firebaseKey = dataSnapshot.getKey();
-                    productone.setKey(firebaseKey);
 
-                    if (dataSnapshot.child("name").exists())
-                        productone.setName(dataSnapshot.child("name").getValue(String.class));
-                    if (dataSnapshot.child("birthday").exists())
-                        productone.setBirthday(dataSnapshot.child("birthday").getValue(String.class));
-                    if (dataSnapshot.child("next_birthday").exists())
-                        productone.setNext_birthday(dataSnapshot.child("next_birthday").getValue(String.class));
-                    if (dataSnapshot.child("imageUrl").exists())
-                        productone.setImageUrl(dataSnapshot.child("imageUrl").getValue(String.class));
-                    if (dataSnapshot.child("age_txt").exists())
-                        productone.setAge_txt(dataSnapshot.child("age_txt").getValue(String.class));
+                for (DataSnapshot ds : snapshot.getChildren()) {
+                    String key = ds.getKey();
 
-                    if (dataSnapshot.child("c_id").exists()) {
-                        productone.setC_id(dataSnapshot.child("c_id").getValue(String.class));
-                    } else {
-                        productone.setC_id(firebaseKey);
+                    String id = ds.child("id").getValue(String.class);
+                    String birthday = ds.child("birthday").child(lang).getValue(String.class);
+                    String next_birthday = ds.child("next_birthday").child(lang).getValue(String.class);
+                    String imageUrl = ds.child("imageUrl").getValue(String.class);
+                    String name = ds.child("name").child(lang).getValue(String.class);
+                    String age_txt = ds.child("age_txt").child(lang).getValue(String.class);
+
+                    // ✅ Skip completely empty or malformed items
+                    if ((id == null || id.trim().isEmpty()) &&
+                            (name == null || name.trim().isEmpty()) &&
+                            (birthday == null || birthday.trim().isEmpty())) {
+                        Log.w("Firebase", "Skipping completely empty or null item: " + key);
+                        continue;
                     }
 
-                    if (productone.getName() != null) {
-                        list.add(productone);
-                        Log.d("AboutUs", "Added item: key=" + firebaseKey +
-                                ", c_id=" + productone.getC_id() +
-                                ", name=" + productone.getName());
-                    }
+                    fbirthaygetclass person = new fbirthaygetclass();
+                    person.setKey(key);
+                    person.setId(id);
+                    person.setBirthday(birthday);
+                    person.setNext_birthday(next_birthday);
+                    person.setImageUrl(imageUrl);
+                    person.setName(name);
+                    person.setAge_txt(age_txt);
+
+                    list.add(person);
                 }
+
                 fbirthdayAdapte.notifyDataSetChanged();
-                Log.d("AboutUs", "Final list size: " + list.size());
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Log.e(TAG, "Database error: " + error.getMessage());
-                Toast.makeText(about_us.this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(about_us.this, "Failed to load data", Toast.LENGTH_SHORT).show();
             }
-
         });
-
     }
 
     private boolean handleBottomNavigation(@NonNull MenuItem item) {
@@ -118,7 +125,6 @@ public class about_us extends AppCompatActivity {
             startActivity(new Intent(about_us.this, dashboard.class));
             return true;
         } else if (itemId == R.id.about_ic) {
-            // Show splash overlay when "About Us" is clicked.
             showSplash();
             return true;
         } else if (itemId == R.id.privacy) {
@@ -146,12 +152,7 @@ public class about_us extends AppCompatActivity {
 
         splashDialog.show();
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                splashDialog.dismiss();
-            }
-        }, 2000);
+        new Handler().postDelayed(splashDialog::dismiss, 2000);
     }
 
     @Override
@@ -159,5 +160,4 @@ public class about_us extends AppCompatActivity {
         super.onBackPressed();
         finishAffinity();
     }
-
 }

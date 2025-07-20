@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ہجری مہینے تلاش کریں</string>
+    <string name="change_language">زبان تبدیل کریں</string>
+    <string name="choose_language">زبان منتخب کریں</string>
+    <string name="age_calculator_title">عمر کیلکولیٹر</string>
+
+    // dashboard
+
+    <string name="Age_Calculator_top_dash">عمر کیلکولیٹر</string>
+    <string name="Birth_Date_dash">تاریخ پیدائش</string>
+    <string name="Current_Date_dash">موجودہ تاریخ</string>
+    <string name="Calculate_Your_Age_dash">اپنی عمر کا حساب لگائیں</string>
+    <string name="Clear_Screen_dash">اسکرین صاف کریں</string>
+    <string name="Age_dash">عمر</string>
+    <string name="YEARS_dash">سال</string>
+    <string name="MONTHS_dash">مہینے</string>
+    <string name="DAYS_dash">دن</string>
+    <string name="Total_Years_dash">کل سال</string>
+    <string name="Total_Months_dash">کل مہینے</string>
+    <string name="Total_Weeks_dash">کل ہفتے</string>
+    <string name="Total_Days_dash">کل دن</string>
+    <string name="Total_Hours_dash">کل گھنٹے</string>
+    <string name="Total_Minutes_dash">کل منٹ</string>
+    <string name="Total_Seconds_dash">کل سیکنڈز</string>
+    <string name="famous_birthdays_dash">مشہور سالگرہ</string>
+    <string name="see_celebrity_birthdate_dash">دیکھیں آپ کے ساتھ کس مشہور شخصیت کی سالگرہ ہے!</string>
+    <string name="load_list_dash">فہرست لوڈ کریں</string>
+    <string name="zodiac_sign_dash">برج</string>
+    <string name="western_dash">مغربی</string>
+    <string name="months_dash">مہینے</string>
+    <string name="chinese_dash">چینی</string>
+
+    // Famous birthday
+    <string name="Famous_Birthday_about">مشہور سالگرہ والے افراد</string>
+    <string name="Age_about">عمر:</string>
+    <string name="years_old_about">59 سال پرانا</string>
+    <string name="Shah_Rukh_about">شاہ رخ خان</string>
+    <string name="Birthday_about">سالگرہ:</string>
+    <string name="date_about">2-11-1965</string>
+    <string name="Next_Birthday_about">اگلی سالگرہ:</string>
+    <string name="next_birthday_date_about">8 مہینے 20 دن</string>
+
+    // Privacy policy
+    <string name="Privacy_Policy_privacy">رازداری کی پالیسی</string>
+    <string name="first_text_privacy">[Age Calculate] میں ہم آپ کی رازداری کی قدر کرتے ہیں۔ یہ ایپ کوئی ذاتی معلومات اکٹھی نہیں کرتی، محفوظ نہیں کرتی اور نہ ہی شیئر کرتی ہے۔ تمام حسابات آپ کے آلے پر ہی انجام دیے جاتے ہیں۔</string>
+    <string name="Data_Security_privacy">ڈیٹا سیکیورٹی:</string>
+    <string name="second_text_privacy">آپ کا ڈیٹا کبھی بھی آپ کے آلے سے باہر نہیں جاتا۔ ہمیں انٹرنیٹ کی اجازت درکار نہیں اور نہ ہی کوئی خفیہ ڈیٹا اکٹھا کرنے والے عمل ہوتے ہیں۔ آپ کے داخل کردہ تمام ڈیٹا کو حسابات کے بعد فوراً حذف کر دیا جاتا ہے۔</string>
+    <string name="App_functionality_privacy">ایپ کی فعالیت:</string>
+    <string name="third_text_privacy">اپنی عمر سال، مہینے، ہفتے، دن، گھنٹے، منٹ اور سیکنڈز میں تاریخ پیدائش سے لے کر موجودہ تاریخ تک حساب کریں۔ اپنے برج کا تعین اپنی تاریخ پیدائش کی بنیاد پر کریں۔ تمام نتائج حقیقی وقت میں پیدا کیے جاتے ہیں اور کبھی بھی محفوظ نہیں کیے جاتے۔</string>
+    <string name="Zodiac_Calculation_privacy">برج کا حساب:</string>
+    <string name="fourth_text_privacy">برج کی تعیین مندرجہ ذیل تاریخوں کے ساتھ ٹراپیکل علم نجوم کے تحت کی جاتی ہے:\n\n• حمل: 21 مارچ - 19 اپریل\n• ثور: 20 اپریل - 20 مئی\n• جوزا: 21 مئی - 20 جون\n• سرطان: 21 جون - 22 جولائی\n• اسد: 23 جولائی - 22 اگست\n• سنبلہ: 23 اگست - 22 ستمبر\n• میزان: 23 ستمبر - 22 اکتوبر\n• عقرب: 23 اکتوبر - 21 نومبر\n• قوس: 22 نومبر - 21 دسمبر\n• جدی: 22 دسمبر - 19 جنوری\n• دلو: 20 جنوری - 18 فروری\n• حوت: 19 فروری - 20 مارچ</string>
+    <string name="Calculation_Method_privacy">حساب کا طریقہ:</string>
+    <string name="fifth_text_privacy">عمر کا حساب ان عوامل کو مدنظر رکھتا ہے:\n• گریگورین کیلنڈر دن\n• لیپ سال\n• مہینے کی لمبائی میں فرق\n• آلہ کی سیٹنگز کے مطابق ٹائم زونز\n• ڈے لائٹ سیونگ ایڈجسٹمنٹس\nتمام نتائج اندازے پر مبنی ہیں اور 24 گھنٹے کے دنوں پر مبنی ہیں۔</string>
+    <string name="Important_Notes_privacy">اہم نوٹس:</string>
+    <string name="sixth_text_privacy">• صرف تفریح کے لیے\n• کوئی طبی یا قانونی مشورہ نہیں\n• برج کی تشریحات مختلف ہو سکتی ہیں\n• تاریخی کیلنڈر تبدیلیوں میں غلطیاں ممکن ہیں\n• نسبتی اثرات شامل نہیں کیے گئے</string>
+
+    // About Us
+    <string name="About_us_aboutUs">ہمارے بارے میں</string>
+    <string name="our_app_aboutUs">ہمارے عمر کیلکولیٹر ایپ کے بارے میں</string>
+    <string name="welcometo_aboutUs">[Age Calculator] میں خوش آمدید، آپ کی درست اور آسان عمر کے حساب کے لیے ایپ۔ ہماری ایپ آپ کی عمر سال، مہینے، ہفتے، دن، گھنٹے، منٹ اور سیکنڈ میں تاریخ پیدائش سے موجودہ تاریخ تک حساب کرتی ہے۔ اس کے علاوہ، یہ آپ کا برج بھی دکھاتی ہے۔</string>
+    <string name="key_feature_aboutUs">اہم خصوصیات:</string>
+    <string name="accurate_age_aboutUs">1. درست عمر کا حساب: سال، مہینے، ہفتے، دن، گھنٹے، منٹ اور سیکنڈ میں عمر معلوم کریں۔\n2. برج: اپنی تاریخ پیدائش کی بنیاد پر اپنا برج دریافت کریں۔\n3. آسان انٹرفیس: سادہ اور باآسانی قابل فہم ڈیزائن۔\n4. پرائیویسی پر مبنی: کوئی ذاتی معلومات جمع یا شیئر نہیں ہوتی۔</string>
+    <string name="App_Settings">ایپ سیٹنگز:</string>
+    <string name="Themse_choose_aboutUs">1. تھیم: لائٹ یا ڈارک تھیم منتخب کریں۔\n2. اطلاعات: یاد دہانیوں کو آن یا آف کریں۔\n3. زبان: اپنی پسندیدہ زبان منتخب کریں۔\n4. ڈیٹا کا استعمال: طے کریں کہ ایپ آپ کا ڈیٹا کس طرح استعمال کرے۔</string>
+    <string name="contact_us_aboutUs">ہم سے رابطہ کریں:</string>
+    <string name="feedback_feel_aboutUs">اگر آپ کے پاس سوالات یا آراء ہیں تو ہم سے info@softsow.com پر رابطہ کریں۔ ہم آپ کی آراء کی قدر کرتے ہیں اور ہمیشہ مدد کے لیے حاضر ہیں!</string>
+
+    <!-- Feedback -->
+    <string name="Feedback_feedback">رائے</string>
+    <string name="feedback_text">ہماری عمر کیلکولیٹر ایپ کے بارے میں</string>
+    <string name="text_feedback">[Age Calculator] میں خوش آمدید، آپ کی قابل بھروسہ ایپ جو درست اور آسان عمر کا حساب فراہم کرتی ہے۔ ہماری ایپ تاریخ پیدائش سے لے کر آج تک کی عمر کا حساب سال، مہینے، ہفتے، دن، گھنٹے، منٹ اور سیکنڈ میں کرتی ہے۔ ساتھ ہی آپ کا برج بھی دکھاتی ہے۔</string>
+    <string name="vlaue_feedback">ہم آپ کی رائے کی قدر کرتے ہیں!</string>
+    <string name="second_text_feedback">براہ کرم چند لمحے نکال کر اپنی رائے ہمارے ساتھ شیئر کریں۔ آپ کی رائے ہمیں ایپ کو بہتر بنانے میں مدد دیتی ہے۔</string>
+    <string name="comment_feedback">آپ کے تبصرے:</string>
+    <string name="type_feedback">یہاں اپنی رائے درج کریں...</string>
+    <string name="submit_feedback">رائے بھیجیں</string>
+
+    // Error Feedback
+    <string name="error_short_feedback">رائے بہت مختصر ہے۔ براہ کرم کم از کم 10 حروف لکھیں۔</string>
+    <string name="error_empty_feedback">یہ خانہ خالی نہیں ہو سکتا</string>
+    <string name="subject_feedback">ایپ کی رائے جمع کروانا</string>
+    <string name="feedback_ready">آپ کی رائے بھیجنے کے لیے تیار ہے۔</string>
+
+    <string name="Change_Language">زبان تبدیل کریں</string>
+
+
+    <string name="Birth_Details">پیدائش کی تفصیل</string>
+
+    // Dashboard
+
+    <!-- western sign -->
+    <string name="zodiac_aquarius">دلو\n♒</string>
+    <string name="zodiac_pisces">حوت\n♓</string>
+    <string name="zodiac_aries">حمل\n♈</string>
+    <string name="zodiac_taurus">ثور\n♉</string>
+    <string name="zodiac_gemini">جوزا\n♊</string>
+    <string name="zodiac_cancer">سرطان\n♋</string>
+    <string name="zodiac_leo">اسد\n♌</string>
+    <string name="zodiac_virgo">سنبلہ\n♍</string>
+    <string name="zodiac_libra">میزان\n♎</string>
+    <string name="zodiac_scorpio">عقرب\n♏</string>
+    <string name="zodiac_sagittarius">قوس\n♐</string>
+    <string name="zodiac_capricorn">جدی\n♑</string>
+    <string name="zodiac_unknown">نامعلوم</string>
+
+    <!-- Chinese sign -->
+    <string name="zodiac_rat">چوہا\n🐀</string>
+    <string name="zodiac_ox">بیل\n🐂</string>
+    <string name="zodiac_tiger">شیر\n🐅</string>
+    <string name="zodiac_rabbit">خرگوش\n🐇</string>
+    <string name="zodiac_dragon">اژدھا\n🐉</string>
+    <string name="zodiac_snake">سانپ\n🐍</string>
+    <string name="zodiac_horse">گھوڑا\n🐎</string>
+    <string name="zodiac_goat">بکری\n🐐</string>
+    <string name="zodiac_monkey">بندر\n🐒</string>
+    <string name="zodiac_rooster">مرغ\n🐓</string>
+    <string name="zodiac_dog">کتا\n🐕</string>
+    <string name="zodiac_pig">سور\n🐖</string>
+
+    
+    // Get Month
+
+    <string name="month_jan">جنوری</string>
+    <string name="month_feb">فروری</string>
+    <string name="month_mar">مارچ</string>
+    <string name="month_apr">اپریل</string>
+    <string name="month_may">مئی</string>
+    <string name="month_jun">جون</string>
+    <string name="month_jul">جولائی</string>
+    <string name="month_aug">اگست</string>
+    <string name="month_sep">ستمبر</string>
+    <string name="month_oct">اکتوبر</string>
+    <string name="month_nov">نومبر</string>
+    <string name="month_dec">دسمبر</string>
+    <string name="month_unknown">نامعلوم</string>
+
+    // Get Data
+    <string name="Basic_Information_GetData">بنیادی معلومات</string>
+    <string name="Name_GetData">نام: </string>
+    <string name="Age_GetData">عمر: </string>
+    <string name="Birthday_GetData">سالگرہ: </string>
+    <string name="Western_Zodiac_GetData">مغربی برج</string>
+    <string name="Capricorn_GetData">مکر</string>
+    <string name="Traits_GetData">خصوصیات: ذمہ دار، منضبط، خود پر قابو</string>
+    <string name="Chinese_Zodiac_GetData">چینی برج</string>
+    <string name="Rat_GetData">چوہا</string>
+    <string name="Next_Birthday_GetData">اگلا سالگرہ</string>
+    <string name="Next_firebase_GetData"></string>
+
+    // Bottom Nav
+    <string name="Home_nav">ہوم</string>
+    <string name="FamousBirthday_nav">مشہور سالگرہ</string>
+    <string name="PrivacyPolicy_nav">پرائیویسی پالیسی</string>
+    <string name="About_nav">ہمارے بارے میں</string>
+
+    // Side NavBar
+    <string name="Feedback_snav">فیڈبیک</string>
+    <string name="Translate_snav">ترجمہ کریں</string>
+
+
+    <string name="english">انگریزی</string>
+    <string name="urdu">اردو</string>
+    <string name="german">جرمن</string>
+
+    <string name="error_title">خرابی</string>
+    <string name="error_message_birth_date">براہ کرم تاریخ پیدائش درج کریں</string>
+    <string name="ok">ٹھیک ہے</string>
+
+    <string name="DarkMood">اندھیرا موڈ</string>
+
+    <string name="dark_mode_disabled">ڈارک موڈ ایڈمن نے غیر فعال کر دیا ہے۔</string>
+
+    <string-array name="languages">
+        <item>انگریزی</item>
+        <item>اردو</item>
+        <item>ہسپانوی</item>
+        <item>فرانسیسی</item>
+        <item>جرمن</item>
+    </string-array>
+</resources>

@@ -32,7 +32,7 @@
                <TextView
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:text="Basic Information"
+                   android:text="@string/Basic_Information_GetData"
                    android:textSize="25dp"
                    android:layout_marginLeft="20dp"
                    android:layout_marginTop="10dp"
@@ -51,7 +51,7 @@
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="Name: "
+                       android:text="@string/Name_GetData"
                        android:textSize="18dp"
                        android:textStyle="bold"
                        android:textColor="#2B4B65"/>
@@ -75,7 +75,7 @@
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="Age: "
+                       android:text="@string/Age_GetData"
                        android:textSize="18dp"
                        android:textStyle="bold"
                        android:textColor="#2B4B65"/>
@@ -98,7 +98,7 @@
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="Birthday: "
+                       android:text="@string/Birthday_GetData"
                        android:textSize="18dp"
                        android:textStyle="bold"
                        android:textColor="#2B4B65"/>
@@ -110,6 +110,7 @@
                        android:textSize="18dp"
                        android:textColor="#000000"/>
                </LinearLayout>
+
 
            </LinearLayout>
             <!-- Western Zodiac Section -->
@@ -127,7 +128,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Western Zodiac"
+                    android:text="@string/Western_Zodiac_GetData"
                     android:textSize="25sp"
                     android:textColor="#2B4B65"
                     android:textStyle="bold"
@@ -155,7 +156,7 @@
                             android:id="@+id/Wzodiac_sign"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Capricorn"
+                            android:text="@string/Capricorn_GetData"
                             android:textSize="20sp"
                             android:textColor="#2B4B65"
                             android:textStyle="bold"/>
@@ -164,7 +165,7 @@
                             android:id="@+id/zodiac_traits"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Traits: Responsible, disciplined, self-controlled"
+                            android:text="@string/Traits_GetData"
                             android:textSize="16sp"
                             android:textColor="@color/black"
                             android:paddingTop="4dp"/>
@@ -187,7 +188,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Chinese Zodiac"
+                    android:text="@string/Chinese_Zodiac_GetData"
                     android:textSize="25sp"
                     android:textColor="#2B4B65"
                     android:textStyle="bold"
@@ -216,7 +217,7 @@
                             android:id="@+id/Czodiac_sign"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rat"
+                            android:text="@string/Rat_GetData"
                             android:textSize="20sp"
                             android:textColor="#2B4B65"
                             android:textStyle="bold"/>
@@ -225,7 +226,7 @@
                             android:id="@+id/chinese_traits"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Traits: Quick-witted, resourceful, versatile"
+                            android:text="@string/Traits_GetData"
                             android:textSize="16sp"
                             android:textColor="@color/black"
                             android:paddingTop="4dp"/>
@@ -241,12 +242,13 @@
                 android:backgroundTint="#fff"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
                 <!-- Next Birthday Section -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Next Birthday"
+                    android:text="@string/Next_Birthday_GetData"
                     android:textSize="25dp"
                     android:textColor="#2B4B65"
                     android:layout_marginLeft="20dp"
@@ -263,6 +265,7 @@
                     android:layout_marginLeft="110dp"
                     android:textColor="@color/black"
                     android:textStyle="bold"
+                    android:text="@string/Next_firebase_GetData"
                     android:paddingBottom="16dp"/>
             </LinearLayout>
 

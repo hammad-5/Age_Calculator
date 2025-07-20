@@ -31,11 +31,14 @@ public class getdata_real extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_getdata_real);
 
-        ScrollView scrollView = findViewById(R.id.scrollVie);
-        scrollView.post(() -> scrollView.smoothScrollTo(0, 0));
+//        ScrollView scrollView = findViewById(R.id.scrollVie);
+//        scrollView.post(() -> scrollView.smoothScrollTo(0, 1500));
 
         arrow_back = findViewById(R.id.arrow_back);
         get_realRecycle = findViewById(R.id.get_realRecycler);
+        get_realRecycle.setHasFixedSize(true);
+        get_realRecycle.setNestedScrollingEnabled(false);
+        get_realRecycle.setItemViewCacheSize(20);
 
         list = new ArrayList<>();
         adapter = new get_realAdapter(this, list);
@@ -49,22 +52,43 @@ public class getdata_real extends AppCompatActivity {
                 .getReference("famousbirthday").child("DetailsScreen").child(child_id);
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Log.d("GetDataReal", "Data exists: " + dataSnapshot.exists());
-                if (dataSnapshot.exists()) {
-                    get_realClass userData = dataSnapshot.getValue(get_realClass.class);
-                    if (userData != null) {
-                        list.add(userData);  // Add data to the list
-                        adapter.notifyDataSetChanged();  // Notify adapter
+            public void onDataChange(DataSnapshot ds) {
+                if (ds.exists()) {
+                    SharedPreferences prefs = getSharedPreferences("SettingsPrefs", MODE_PRIVATE);
+                    String lang = prefs.getString("My_Lang", "en");
+
+                    try {
+                        String name = ds.child("name").child(lang).getValue(String.class);
+                        String birthday = ds.child("birthday").child(lang).getValue(String.class);
+                        String next_birt = ds.child("next_birt").child(lang).getValue(String.class);
+                        String age = ds.child("age").child(lang).getValue(String.class);
+                        String zodiac_trait = ds.child("zodiac_trait").child(lang).getValue(String.class);
+                        String chinese_trait = ds.child("chinese_trait").child(lang).getValue(String.class);
+                        String Wzodiac_sig = ds.child("Wzodiac_sig").child(lang).getValue(String.class);
+                        String Czodiac_sig = ds.child("Czodiac_sig").child(lang).getValue(String.class);
+                        String img = ds.child("img").getValue(String.class);
+                        String img2 = ds.child("img2").getValue(String.class);
+
+                        get_realClass userData = new get_realClass(
+                                name, age, birthday, img, zodiac_trait, img2,
+                                chinese_trait, next_birt, child_id, Wzodiac_sig, Czodiac_sig
+                        );
+
+                        list.add(userData);
+                        adapter.notifyDataSetChanged();
+
+                    } catch (Exception e) {
+                        Log.e("FirebaseError", "Data mapping error: " + e.getMessage());
                     }
                 }
             }
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.e("GetDataReal", "Error: " + databaseError.getMessage());
-            }
 
+            @Override
+            public void onCancelled(DatabaseError error) {
+                Log.e("FirebaseError", "Database error: " + error.getMessage());
+            }
         });
+
         arrow_back.setOnClickListener(v -> {
             startActivity(new Intent(getdata_real.this, about_us.class));
             finish();

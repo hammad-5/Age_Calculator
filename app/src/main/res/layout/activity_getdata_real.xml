@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Birth Details"
+            android:text="@string/Birth_Details"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -56,6 +56,7 @@
         android:id="@+id/get_realRecycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
         tools:listitem="@layout/get_realdesign"
         />
     </ScrollView>

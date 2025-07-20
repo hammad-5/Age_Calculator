@@ -52,8 +52,9 @@ public class fbirthdayAdapter extends RecyclerView.Adapter<fbirthdayAdapter.View
 
             holder.itemView.setOnClickListener(v -> {
                 SharedPreferences prefs = context.getSharedPreferences("CardData", Context.MODE_PRIVATE);
-                prefs.edit().putString("child_id", user.getC_id()).apply();
-                Log.d("FBirthdayAdapter", "Saved child_id: " + user.getC_id()); // Add this log
+                String lang = prefs.getString("App_Lang", "en"); // default = en
+                prefs.edit().putString("child_id", user.getKey()).apply();
+                Log.d("FBirthdayAdapter", "Saved child_id: " + user.getKey()); // Add this log
                 context.startActivity(new Intent(context, getdata_real.class));
             });
         }

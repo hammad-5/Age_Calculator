@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hijrimonat finden</string>
+    <string name="change_language">Sprache ändern</string>
+    <string name="choose_language">Sprache wählen</string>
+    <string name="age_calculator_title">ALTERSRECHNER</string>
+
+    // dashboard
+
+    <string name="Age_Calculator_top_dash">Alter Rechner</string>
+    <string name="Birth_Date_dash">Geburtsdatum</string>
+    <string name="Current_Date_dash">Aktuelles Datum</string>
+    <string name="Calculate_Your_Age_dash">Berechne dein Alter</string>
+    <string name="Clear_Screen_dash">Bildschirm löschen</string>
+    <string name="Age_dash">Alter</string>
+    <string name="YEARS_dash">JAHRE</string>
+    <string name="MONTHS_dash">MONATE</string>
+    <string name="DAYS_dash">TAGE</string>
+    <string name="Total_Years_dash">Gesamtjahre</string>
+    <string name="Total_Months_dash">Gesamtmonate</string>
+    <string name="Total_Weeks_dash">Gesamtwochen</string>
+    <string name="Total_Days_dash">Gesamttage</string>
+    <string name="Total_Hours_dash">Gesamtstunden</string>
+    <string name="Total_Minutes_dash">Gesamtminuten</string>
+    <string name="Total_Seconds_dash">Gesamtsekunden</string>
+    <string name="famous_birthdays_dash">Berühmte Geburtstage</string>
+    <string name="see_celebrity_birthdate_dash">Sieh, welche Prominenten das gleiche Geburtsdatum haben wie du!</string>
+    <string name="load_list_dash">Liste laden</string>
+    <string name="zodiac_sign_dash">Sternzeichen</string>
+    <string name="western_dash">WESTLICH</string>
+    <string name="months_dash">MONATE</string>
+    <string name="chinese_dash">CHINESISCH</string>
+
+    // Famous birthday
+    <string name="Famous_Birthday_about">Berühmte Geburtstagskinder</string>
+    <string name="Age_about">Alter:</string>
+    <string name="years_old_about">59 Jahre alt</string>
+    <string name="Shah_Rukh_about">Shah Rukh Khan</string>
+    <string name="Birthday_about">Geburtstag:</string>
+    <string name="date_about">2-11-1965</string>
+    <string name="Next_Birthday_about">Nächster Geburtstag:</string>
+    <string name="next_birthday_date_about">8 Monate 20 Tage</string>
+
+    // Privacy policy
+    <string name="Privacy_Policy_privacy">Datenschutzrichtlinie</string>
+    <string name="first_text_privacy">Bei [Age Calculate] schätzen wir Ihre Privatsphäre. Diese App sammelt, speichert oder teilt keine persönlichen Informationen. Alle Berechnungen erfolgen lokal auf Ihrem Gerät.</string>
+    <string name="Data_Security_privacy">Datensicherheit:</string>
+    <string name="second_text_privacy">Ihre Daten verlassen niemals Ihr Gerät. Wir benötigen keine Internetberechtigungen und es gibt keine versteckten Datenerfassungsprozesse. Alle von Ihnen eingegebenen Daten werden nach den Berechnungen sofort verworfen.</string>
+    <string name="App_functionality_privacy">App-Funktionalität:</string>
+    <string name="third_text_privacy">Berechnen Sie Ihr Alter in Jahren, Monaten, Wochen, Tagen, Stunden, Minuten und Sekunden vom Geburtsdatum bis zum aktuellen Datum. Bestimmen Sie Ihr Sternzeichen basierend auf Ihrem Geburtsdatum mit den Standardastrologieberechnungen. Alle Ergebnisse werden in Echtzeit generiert und nie gespeichert.</string>
+    <string name="Zodiac_Calculation_privacy">Berechnung des Sternzeichens:</string>
+    <string name="fourth_text_privacy">Sternzeichen werden unter Verwendung von tropischer Astrologie und Daten berechnet:\n\n• Widder: 21. März - 19. April\n• Stier: 20. April - 20. Mai\n• Zwillinge: 21. Mai - 20. Juni\n• Krebs: 21. Juni - 22. Juli\n• Löwe: 23. Juli - 22. August\n• Jungfrau: 23. August - 22. September\n• Waage: 23. September - 22. Oktober\n• Skorpion: 23. Oktober - 21. November\n• Schütze: 22. November - 21. Dezember\n• Steinbock: 22. Dezember - 19. Januar\n• Wassermann: 20. Januar - 18. Februar\n• Fische: 19. Februar - 20. März</string>
+    <string name="Calculation_Method_privacy">Berechnungsmethode:</string>
+    <string name="fifth_text_privacy">Die Altersberechnungen berücksichtigen:\n• Gregorianische Kalendertage\n• Schaltjahre\n• Monatliche Längenschwankungen\n• Zeitzonen basierend auf den Geräteeinstellungen\n• Anpassungen an der Sommerzeit\nAlle Ergebnisse sind ungefähre Werte und basieren auf 24-Stunden-Tagen.</string>
+    <string name="Important_Notes_privacy">Wichtige Hinweise:</string>
+    <string name="sixth_text_privacy">• Nur zu Unterhaltungszwecken\n• Keine medizinische/rechtliche Beratung\n• Sternzeichen-Interpretationen können variieren\n• Kalenderumrechnungen können historische Ungenauigkeiten enthalten\n• Keine relativistischen Effekte berücksichtigt</string>
+
+    // About Us
+    <string name="About_us_aboutUs">Über uns</string>
+    <string name="our_app_aboutUs">Über unsere Age Calculator App</string>
+    <string name="welcometo_aboutUs">Willkommen bei [Age Calculator], Ihrer App zur genauen und mühelosen Altersberechnung. Unsere App hilft Ihnen, Ihr Alter in Jahren, Monaten, Wochen, Tagen, Stunden, Minuten und Sekunden vom Geburtsdatum bis zum aktuellen Datum zu berechnen. Zusätzlich zeigt sie Ihr Sternzeichen basierend auf Ihrem Geburtsdatum an.</string>
+    <string name="key_feature_aboutUs">Hauptmerkmale:</string>
+    <string name="accurate_age_aboutUs">1. Genaue Altersberechnung: Berechnen Sie Ihr Alter in Jahren, Monaten, Wochen, Tagen, Stunden, Minuten und Sekunden.\n2. Sternzeichen: Entdecken Sie Ihr Sternzeichen basierend auf Ihrem Geburtsdatum.\n3. Benutzerfreundliche Oberfläche: Einfaches und intuitives Design für einfache Navigation.\n4. Datenschutzorientiert: Keine persönlichen Daten werden gesammelt oder geteilt.</string>
+    <string name="App_Settings">App-Einstellungen:</string>
+    <string name="Themse_choose_aboutUs">1. Thema: Wählen Sie zwischen einem hellen und einem dunklen Thema für ein personalisiertes Erlebnis.\n2. Benachrichtigungen: Aktivieren oder deaktivieren Sie Erinnerungen für besondere Anlässe.\n3. Sprache: Wählen Sie Ihre bevorzugte Sprache für die App-Oberfläche.\n4. Datennutzung: Steuern Sie, wie die App Ihre Daten für Berechnungen verwendet.</string>
+    <string name="contact_us_aboutUs">Kontaktieren Sie uns:</string>
+    <string name="feedback_feel_aboutUs">Wenn Sie Fragen oder Feedback haben, können Sie uns gerne unter info@softsow.com erreichen. Wir schätzen Ihr Feedback und sind immer hier, um zu helfen!</string>
+
+
+    <!-- Feedback -->
+    <string name="Feedback_feedback">Feedback</string>
+    <string name="feedback_text">Über unsere Altersrechner-App</string>
+    <string name="text_feedback">Willkommen bei [Age Calculator], Ihrer zuverlässigen App zur genauen und mühelosen Altersberechnung. Unsere App hilft Ihnen, Ihr Alter in Jahren, Monaten, Wochen, Tagen, Stunden, Minuten und Sekunden vom Geburtsdatum bis zum aktuellen Datum zu berechnen. Außerdem zeigt sie Ihr Sternzeichen basierend auf Ihrem Geburtsdatum an.</string>
+    <string name="vlaue_feedback">Wir schätzen Ihr Feedback!</string>
+    <string name="second_text_feedback">Bitte nehmen Sie sich einen Moment Zeit, um Ihre Erfahrungen mit uns zu teilen. Ihr Feedback hilft uns, die App zu verbessern.</string>
+    <string name="comment_feedback">Ihre Kommentare:</string>
+    <string name="type_feedback">Geben Sie hier Ihr Feedback ein...</string>
+    <string name="submit_feedback">Feedback absenden</string>
+
+    // Error Feedback
+    <string name="error_short_feedback">Das Feedback ist zu kurz. Bitte schreiben Sie mindestens 10 Zeichen.</string>
+    <string name="error_empty_feedback">Dieses Feld darf nicht leer sein</string>
+    <string name="subject_feedback">App-Feedback-Einreichung</string>
+    <string name="feedback_ready">Ihr Feedback ist bereit zur Übermittlung.</string>
+    <string name="Change_Language">Sprache ändern</string>
+
+    // Dashboard
+
+    // western sign
+
+    <string name="zodiac_aquarius">Wassermann \n ♒</string>
+    <string name="zodiac_pisces">Fische \n ♓</string>
+    <string name="zodiac_aries">Widder \n ♈</string>
+    <string name="zodiac_taurus">Stier \n ♉</string>
+    <string name="zodiac_gemini">Zwillinge \n ♊</string>
+    <string name="zodiac_cancer">Krebs \n ♋</string>
+    <string name="zodiac_leo">Löwe \n ♌</string>
+    <string name="zodiac_virgo">Jungfrau \n ♍</string>
+    <string name="zodiac_libra">Waage \n ♎</string>
+    <string name="zodiac_scorpio">Skorpion \n ♏</string>
+    <string name="zodiac_sagittarius">Schütze \n ♐</string>
+    <string name="zodiac_capricorn">Steinbock \n ♑</string>
+    <string name="zodiac_unknown">Unbekannt</string>
+
+    // Chinese sign
+
+    <string name="zodiac_rat">Ratte \n 🐀</string>
+    <string name="zodiac_ox">Ochse \n 🐂</string>
+    <string name="zodiac_tiger">Tiger \n 🐅</string>
+    <string name="zodiac_rabbit">Kaninchen \n 🐇</string>
+    <string name="zodiac_dragon">Drache \n 🐉</string>
+    <string name="zodiac_snake">Schlange \n 🐍</string>
+    <string name="zodiac_horse">Pferd \n 🐎</string>
+    <string name="zodiac_goat">Ziege \n 🐐</string>
+    <string name="zodiac_monkey">Affe \n 🐒</string>
+    <string name="zodiac_rooster">Hahn \n 🐓</string>
+    <string name="zodiac_dog">Hund \n 🐕</string>
+    <string name="zodiac_pig">Schwein \n 🐖</string>
+
+    // Get Month
+
+    <string name="month_jan">Jan</string>
+    <string name="month_feb">Feb</string>
+    <string name="month_mar">Mär</string>
+    <string name="month_apr">Apr</string>
+    <string name="month_may">Mai</string>
+    <string name="month_jun">Jun</string>
+    <string name="month_jul">Jul</string>
+    <string name="month_aug">Aug</string>
+    <string name="month_sep">Sep</string>
+    <string name="month_oct">Okt</string>
+    <string name="month_nov">Nov</string>
+    <string name="month_dec">Dez</string>
+    <string name="month_unknown">Unbekannt</string>
+
+    // Get Data
+    <string name="Basic_Information_GetData">Grundinformationen</string>
+    <string name="Name_GetData">Name: </string>
+    <string name="Age_GetData">Alter: </string>
+    <string name="Birthday_GetData">Geburtstag: </string>
+    <string name="Western_Zodiac_GetData">Westliches Sternzeichen</string>
+    <string name="Capricorn_GetData">Steinbock</string>
+    <string name="Traits_GetData">Eigenschaften: Verantwortlich, diszipliniert, selbstkontrolliert</string>
+    <string name="Chinese_Zodiac_GetData">Chinesisches Sternzeichen</string>
+    <string name="Rat_GetData">Ratte</string>
+    <string name="Next_Birthday_GetData">Nächster Geburtstag</string>
+    <string name="Next_firebase_GetData"></string>
+
+    // Bottom Nav
+    <string name="Home_nav">Startseite</string>
+    <string name="FamousBirthday_nav">Berühmte Geburtstage</string>
+    <string name="PrivacyPolicy_nav">Datenschutzrichtlinie</string>
+    <string name="About_nav">Über uns</string>
+
+    // Side NavBar
+    <string name="Feedback_snav">Feedback</string>
+    <string name="Translate_snav">Übersetzen</string>
+
+    <string name="Birth_Details">Geburtsdetails</string>
+
+    <string name="english">Englisch</string>
+    <string name="urdu">Urdu</string>
+    <string name="german">Deutsch</string>
+
+    <string name="error_title">Fehler</string>
+    <string name="error_message_birth_date">Bitte Geburtsdatum eingeben</string>
+    <string name="ok">OK</string>
+    <string name="DarkMood">Dunkler Modus</string>
+
+    <string name="dark_mode_disabled">Der Dunkelmodus wurde vom Administrator deaktiviert.</string>
+
+    <string-array name="languages">
+        <item>Englisch</item>
+        <item>Urdu</item>
+        <item>Spanisch</item>
+        <item>Französisch</item>
+        <item>Deutsch</item>
+    </string-array>
+</resources>
+

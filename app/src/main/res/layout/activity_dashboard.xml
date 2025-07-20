@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Age Calculator"
+                android:text="@string/Age_Calculator_top_dash"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:layout_marginLeft="20dp"
@@ -80,7 +80,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:fontFamily="@font/mediumitalic"
-                        android:text="Birth Date"
+                        android:text="@string/Birth_Date_dash"
                         android:textColor="@color/white"
                         android:textSize="20dp" />
 
@@ -101,7 +101,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:fontFamily="@font/mediumitalic"
-                        android:text="Current Date"
+                        android:text="@string/Current_Date_dash"
                         android:textColor="@color/white"
                         android:textSize="20dp" />
 
@@ -124,7 +124,7 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginTop="20dp"
                         android:textColor="@color/UCLA_Blue"
-                        android:text="Calculate Your Age"
+                        android:text="@string/Calculate_Your_Age_dash"
                         android:gravity="center"
                         android:textStyle="bold"
                         android:background="@drawable/btn_design" />
@@ -136,7 +136,7 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginTop="20dp"
                         android:textColor="@color/UCLA_Blue"
-                        android:text="Clear Screen"
+                        android:text="@string/Clear_Screen_dash"
                         android:gravity="center"
                         android:textStyle="bold"
                         android:background="@drawable/btn_design" />
@@ -147,13 +147,13 @@
                     android:layout_height="50dp"
                     android:background="@drawable/shape_design"/>
 
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center"
                     >
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="145dp"
@@ -167,7 +167,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Age"
+                            android:text="@string/Age_dash"
                             android:textSize="30dp"
                             android:textColor="#2B4B65"
                             android:textStyle="bold"
@@ -196,17 +196,18 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="YEARS"
+                                android:text="@string/YEARS_dash"
                                 android:textColor="#2B4B65"
                                 android:textSize="20sp" />
 
                             <TextView
                                 android:id="@+id/textMonth"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="MONTHS"
+                                android:text="@string/MONTHS_dash"
+                                android:layout_marginLeft="15dp"
                                 android:textColor="#2B4B65"
                                 android:textSize="20sp" />
 
@@ -216,7 +217,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="DAYS"
+                                android:text="@string/DAYS_dash"
                                 android:textColor="#2B4B65"
                                 android:textSize="20sp" />
                         </LinearLayout>
@@ -237,7 +238,7 @@
                                 android:gravity="center"
                                 android:text="0"
                                 android:textColor="@color/black"
-                                android:textSize="20sp" />
+                                android:textSize="25dp" />
 
                             <TextView
                                 android:id="@+id/cmonth"
@@ -247,7 +248,7 @@
                                 android:gravity="center"
                                 android:text="0"
                                 android:textColor="@color/black"
-                                android:textSize="20sp" />
+                                android:textSize="25dp" />
 
                             <TextView
                                 android:id="@+id/cdays"
@@ -256,8 +257,9 @@
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:text="0"
+                                android:layout_marginLeft="20dp"
                                 android:textColor="@color/black"
-                                android:textSize="20sp" />
+                                android:textSize="25dp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -270,6 +272,9 @@
                         android:gravity="center"
                         android:background="@drawable/udesign"
                         android:backgroundTint="#fff"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
                         android:padding="10dp">
 
                         <!-- Left side: Labels -->
@@ -282,7 +287,7 @@
                                 android:id="@+id/txtyear"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total Years"
+                                android:text="@string/Total_Years_dash"
                                 android:textColor="#2B4B65"
                                 android:textSize="20dp"
                                 android:padding="8dp" />
@@ -291,7 +296,7 @@
                                 android:id="@+id/txtmonth"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total Months"
+                                android:text="@string/Total_Months_dash"
                                 android:textColor="#2B4B65"
                                 android:textSize="20dp"
                                 android:padding="8dp" />
@@ -300,7 +305,7 @@
                                 android:id="@+id/txtweek"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total Weeks"
+                                android:text="@string/Total_Weeks_dash"
                                 android:textColor="#2B4B65"
                                 android:textSize="20dp"
                                 android:padding="8dp" />
@@ -309,7 +314,7 @@
                                 android:id="@+id/txtdays"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total Days"
+                                android:text="@string/Total_Days_dash"
                                 android:textColor="#2B4B65"
                                 android:textSize="20dp"
                                 android:padding="8dp" />
@@ -318,7 +323,7 @@
                                 android:id="@+id/txthours"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total Hours"
+                                android:text="@string/Total_Hours_dash"
                                 android:textColor="#2B4B65"
                                 android:textSize="20dp"
                                 android:padding="8dp" />
@@ -327,7 +332,7 @@
                                 android:id="@+id/txtminutes"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total Minutes"
+                                android:text="@string/Total_Minutes_dash"
                                 android:textColor="#2B4B65"
                                 android:textSize="20dp"
                                 android:padding="8dp" />
@@ -336,7 +341,7 @@
                                 android:id="@+id/txtseconds"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total Seconds"
+                                android:text="@string/Total_Seconds_dash"
                                 android:textColor="#2B4B65"
                                 android:textSize="20dp"
                                 android:padding="8dp" />
@@ -420,14 +425,73 @@
                         </LinearLayout>
                     </LinearLayout>
 
+                </LinearLayout>
 
+                // Famous Birthday
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:id="@+id/famousbirthday_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/design"
+                        android:backgroundTint="#fff"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/famous_birthdays_dash"
+                            android:textSize="30dp"
+                            android:textColor="#2B4B65"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/mediumitalic"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/black"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            />
+                        <TextView
+                            android:id="@+id/see_famousbirthday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="@string/see_celebrity_birthdate_dash"
+                            android:textColor="@color/gray"
+                            android:textSize="15dp"
+
+                            />
+                        <TextView
+                            android:id="@+id/load_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/load_list_dash"
+                            android:textColor="#2B4B65"
+                            android:textSize="23dp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp"
+                            />
+                    </LinearLayout>
                 </LinearLayout>
 
                 <!-- Zodiac Section -->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:background="@drawable/design"
                     android:backgroundTint="#fff"
@@ -438,7 +502,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Zodiac Sign"
+                        android:text="@string/zodiac_sign_dash"
                         android:fontFamily="@font/mediumitalic"
                         android:textSize="30dp"
                         android:textColor="#2B4B65"
@@ -454,70 +518,93 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_horizontal"
-                        android:layout_marginTop="10dp">
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="WESTERN"
-                            android:textColor="#2B4B65"
-                            android:layout_marginLeft="10dp"
-                            android:textSize="20dp" />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="MONTHS"
-                            android:textColor="#2B4B65"
-                            android:textSize="20dp" />
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="CHINESE"
-                            android:textColor="#2B4B65"
-                            android:textSize="20dp" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:orientation="horizontal"
-                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="20dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="20dp">
-                        <TextView
-                            android:id="@+id/zsign"
-                            android:layout_width="0dp"
+                        android:layout_marginRight="10dp">
+
+                        <!-- First Row: Titles -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textColor="#111111"
-                            android:textSize="13dp" />
-                        <TextView
-                            android:id="@+id/zmonth"
-                            android:layout_width="0dp"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/western_dash"
+                                android:textColor="#2B4B65"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/months_dash"
+                                android:textColor="#2B4B65"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/chinese_dash"
+                                android:textColor="#2B4B65"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <!-- Second Row: Values -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textColor="#111111"
-                            android:textSize="13dp" />
-                        <TextView
-                            android:id="@+id/zchinese"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textColor="#111111"
-                            android:textSize="13dp" />
+                            android:orientation="horizontal"
+                            android:gravity="top">
+
+                            <TextView
+                                android:id="@+id/zsign"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="top|center"
+                                android:text="0"
+                                android:textStyle="bold"
+                                android:textColor="#111111"
+                                android:textSize="20sp"
+                                android:paddingTop="5dp" />
+
+                            <TextView
+                                android:id="@+id/zmonth"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="top|center"
+                                android:text="0"
+                                android:textStyle="bold"
+                                android:textColor="#111111"
+                                android:textSize="20sp"
+                                android:paddingTop="5dp" />
+
+                            <TextView
+                                android:id="@+id/zchinese"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="top|center"
+                                android:text="0"
+                                android:textStyle="bold"
+                                android:textColor="#111111"
+                                android:textSize="20sp"
+                                android:paddingTop="5dp" />
+                        </LinearLayout>
+
                     </LinearLayout>
+
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
@@ -534,6 +621,7 @@
            app:itemIconTint="@color/white"
            app:itemTextColor="@color/white"
            android:backgroundTint="#ffff"
+
            />
     </LinearLayout>
 
@@ -547,6 +635,8 @@
         android:background="#1a1a1a"
         app:itemTextColor="@color/white"
         app:itemIconTint="@color/white"
-        android:layout_gravity="end" />
+        android:layout_gravity="end"
+        android:listDivider="@drawable/divider_line"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
+
